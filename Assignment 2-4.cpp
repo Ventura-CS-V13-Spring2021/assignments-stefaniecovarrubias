@@ -2,12 +2,16 @@
 using namespace std;
 int main()
 {
-  char characters;
-  characters = 65;
+  int i = 65;
 
-  while (characters <= 90)
+  while (i <= 90)
   {
-    cout << characters << "";
-    characters++;
+    if (i % 5 == 4){
+     cout << static_cast<char>(i) << " " << endl; 
+    } else {
+        cout << static_cast<char>(i) << " ";
+    }
+    i++;
   }
+return 0;
 }
